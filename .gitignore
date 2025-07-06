@@ -23,6 +23,4 @@
 hs_err_pid*
 /.idea/
 /cat watching.iml
-/target/maven-status/maven-compiler-plugin/*
-/target/maven-archiver/pom.properties
-/target/classes/read.me
+/target/*
