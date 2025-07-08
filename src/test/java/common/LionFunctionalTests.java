@@ -8,12 +8,12 @@ import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 
-public class LionFunctionalTest {
+public class LionFunctionalTests {
 
     private final String sex = "Самка";
     private final Lion lion = new Lion(sex, new Feline());
 
-    public LionFunctionalTest() throws Exception {
+    public LionFunctionalTests() throws Exception {
     }
 
     @Test

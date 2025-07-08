@@ -5,12 +5,17 @@
     public static void main(String[] args) throws Exception {
 
 <span class="nc" id="L7">        Lion lion = new Lion(&quot;Самец&quot;, new Feline());</span>
-<span class="nc" id="L8">        System.out.println(lion.getFood());</span>
+<span class="nc" id="L8">        LionAlex alex = new LionAlex(new Feline());</span>
 
-<span class="nc" id="L10">        Cat cat = new Cat(new Feline());</span>
-<span class="nc" id="L11">        System.out.println(cat.getFood());</span>
+<span class="nc" id="L10">        lion.getFood();</span>
 
-<span class="nc" id="L13">    }</span>
+<span class="nc" id="L12">        System.out.println(alex.getFriends());</span>
+<span class="nc" id="L13">        System.out.println(alex.getPlaceOfLiving());</span>
+<span class="nc" id="L14">        System.out.println(alex.getKittens());</span>
+<span class="nc" id="L15">        System.out.println(alex.getFood());</span>
+
+
+<span class="nc" id="L18">    }</span>
 
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>
