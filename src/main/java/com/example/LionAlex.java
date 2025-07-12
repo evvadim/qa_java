@@ -4,8 +4,13 @@ import java.util.List;
 
 public class LionAlex extends Lion {
 
-    public LionAlex(IFeline feline) throws Exception {
-        super("Самец", feline);
+    public LionAlex(Feline feline) throws Exception {
+        super(feline, "Самец");
+    }
+
+    @Override
+    public int getKittens() {
+        return 0;
     }
 
     public List<String> getFriends() {
