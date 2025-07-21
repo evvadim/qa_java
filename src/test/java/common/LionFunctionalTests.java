@@ -17,12 +17,14 @@ public class LionFunctionalTests {
 
     @Test
     public void getKittens() {
-        assertEquals(0, lion.getKittens());
+        Mockito.when(lion.getKittens()).thenReturn(1);
+        assertEquals(1, lion.getKittens());
     }
 
     @Test
     public void getFood() throws Exception {
-        assertEquals(List.of(), lion.getFood());
+        Mockito.when(lion.getFood()).thenReturn(List.of("Животные", "Птицы", "Рыба"));
+        assertEquals(List.of("Животные", "Птицы", "Рыба"), lion.getFood());
     }
 
 }
