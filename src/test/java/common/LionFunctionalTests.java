@@ -1,5 +1,6 @@
 package common;
 
+import com.example.Feline;
 import com.example.Lion;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -13,7 +14,11 @@ import static org.junit.Assert.assertEquals;
 @RunWith(MockitoJUnitRunner.class)
 public class LionFunctionalTests {
 
-    Lion lion = Mockito.mock(Lion.class);
+    Feline feline = Mockito.mock(Feline.class);
+    Lion lion = new Lion(feline, "Самка");
+
+    public LionFunctionalTests() throws Exception {
+    }
 
     @Test
     public void getKittens() {
